@@ -5,9 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Airtable</title>
+    <style>
+
+.column {
+            float: left;
+            width: 21%;
+            padding: 0 10px;
+            margin-inline: 5px;
+        }
+
+        button
+    {
+        background-color: rgb(255, 255, 255);
+        border: black 0.5px solid;
+        text-align: center;
+        color: black;
+        height: 40px;
+        width: 240px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .parent {
+            margin: 1rem;
+            text-align: left;
+        }
+        .child2{
+            display: inline-block;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+        }
+        .child1 {
+            display: inline-block;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+            font-style: arial;
+            font-size: 30px;     
+        }
+
+        .Card {
+    border : rgb(0, 0, 0) 1px solid;
+    border-radius: 10px;
+    background-color : rgb(255, 255, 255);
+    text-align : left;
+    padding-left : 20px;
+    height : 720px;
+    width : 255px;
+    font-style: arial;
+    font-size: 16px;
+    margin-left: 20px;
+     }
+
+     .Parent {
+            margin: 0.2rem;
+            text-align: left;
+        }
+        .Child2{
+            display: inline-block;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+            font-size: 18px;
+          
+        }
+        .Child1 {
+            display: inline-block;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+            font-style: arial;
+            font-size: 30px;     
+        }
+
+        .Card2{
+            border: rgb(255, 230, 200) 1px solid;
+            border-radius: 10px;
+            background-color: rgb(255, 230, 190); 
+            text-align: left;
+            padding-left: 20px;
+            height: 720px;
+            width: 255px;
+            font-style: arial;
+            font-size: 16px;
+            margin-left: 25px;
+        }
+
+        .Card3{
+            border: rgb(187, 225, 245) 1px solid;
+            border-radius: 10px;
+            background-color: rgb(185, 225, 245); 
+            text-align: left;
+            padding-left: 20px;
+            height: 720px;
+            width: 255px;
+            font-style: arial;
+            font-size: 16px;
+            margin-left: 25px;
+        }
+
+        .Card4{
+            border: rgb(0, 0, 0) 1px solid;
+            border-radius: 10px;
+            background-color: rgb(0, 0, 0); 
+            text-align: left;
+            padding-left: 20px;
+            height: 720px;
+            width: 255px;
+            color: rgb(255, 255, 255);
+            font-style: arial;
+            font-size: 16px;
+            margin-left: 25px;
+        }
+
+      
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+
+        .Topbutton{
+            background-color: rgb(50, 100, 239);
+            border: none;
+            border-radius: 0px;
+            text-align: left;
+            outline: 0;
+            padding: 12px;
+            color: rgb(255, 255, 255);
+            height: 40px;
+            width: 255px;
+            cursor: pointer;
+            align-self: baseline;
+            justify-content: left;
+        }
+        .Heading
+        {
+            text-align: center;
+            font-size: 22px;
+        }
+    </style>
 </head>
 <body>
-    <h3>Choose the perfect plan for your team's needs</h3>
+    <div class="Heading">
+        <h1><b>Choose the perfect plan <br> for your team's needs</b></h1>
+    </div>
 
     <div class="row">
         <div class="column">
@@ -17,11 +155,17 @@
 
                 <br>
                 <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
 
                 <h1>FREE</h1>
+<br>
 
                 <button>
-                    sign up
+                    Sign up
                 </button>
 
                 <p>Free includes:</p>
@@ -34,6 +178,7 @@
                 <li>1 extension per base</li>
                 <li>1 sync integration</li>
                 <li>1,200 of attachments per base</li>
+                <li>2GB of attachments per base</li>
             </ul>
 
             </div>
@@ -41,14 +186,21 @@
 
 
              <div class="column">
-                <div class="Card 2">
+                <div class="Card2">
                     <h3>Plus</h3>
                     <p>For teams looking to create connected apps to manage their own workflows</p>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
                     <div class="parent">
-                        <div class="Child 1"> $10 </div>
-                        <div class="Child 2"> per seat/month <br> billed annually</div>
+                        <div class="Child1"> <b>$10</b></div>
+                        <div class="Child2"> per seat/month <br> billed annually</div>
                     </div>
+
+                    <p>$12 billed monthly</p>
 
             <button> Try for free </button>
 
@@ -69,7 +221,77 @@
              </div>
 
 
-             
+             <div class="column">
+                <div class="Card3">
+<p>
+    <button class="Topbutton"> Most popular</button>
+</p>
+            
+<h3>Pro</h3>
+<p>For team and departments who need to build connected apps to power their most important processes</p>
+
+<br>
+<br>
+<div class="Parent">
+    <div class="Child1"> <b>$20</b></div>
+    <div class="Child2 "> per seat/month <br> billed annually</div>
+</div>
+
+<p>$24 billed monthly</p>
+
+<button>Try for free</button>
+
+<p>Everything in Plus, plus:</p>
+<ul>
+    <li>10 extension per base</li>
+    <li>7 sync integrations per including Jira Cloud</li>
+    <li>50,000 records per base</li>
+    <li>20GB of attachments per base</li>
+    <li>Gantt & Timeline Views</li>
+    <li>Granular interface permissions</li>
+    <li>1-year revision & snapshot history</li>
+    <li>Personal & locked views</li>
+    <li>Field & table editing permissions</li>
+</ul>
+                </div>
+             </div>
+
+
+             <div class="column">
+                <div class="Card4">
+                    <h3>Enterprise</h3>
+                    <p>For departments and organizations who need a secure, scalable, and customizable connected apps platform to stay aligned and move work forward.</p>
+<br>
+<br>
+<br>
+<br>
+
+                    <p>&star;</p>
+<br>
+<br>
+<br>
+
+<button>Contact sales</button>
+
+<p>Everything in Pro, plus:</p>
+
+<ul>
+    <li>Unlimited workspaces per organization</li>
+    <li>Unlimited extensions</li>
+    <li>Salesforce & Jira on-prem sync integrations</li>
+    <li>250,000 records per base</li>
+    <li>1,000GB of attachments per base</li>
+    <li>Advanced interface controls</li>
+    <li>3-years revision & snapshot history</li>
+    <li>SAML-based single sign-on</li>
+    <li>Enterprise-wide admin panel</li>
+    <li>Ongoing Success Program</li>
+    <li>Included Professional Services</li>
+    <li>Add-On Professional Services</li>
+</ul>
+                </div>
+
+             </div>
     </div>
 
 </body>
